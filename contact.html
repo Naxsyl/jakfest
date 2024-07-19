@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JakFest</title>
+    <!-- My Bootstrap -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <!-- icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- My style -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="contact">
+    <!-- Navbar Start -->
+    <nav
+      class="navbar navbar-dark bg-transparent navbar-expand-md sticky-top mynavbar"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">JakFest</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end text-bg-dark"
+          tabindex="-1"
+          id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+              JakFest
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body text-center">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link" href="about.html">About</a>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Event
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="music.html">Music</a></li>
+                  <li><a class="dropdown-item" href="food.html">Food</a></li>
+                  <li>
+                    <a class="dropdown-item" href="cosplay.html">Cosplay</a>
+                  </li>
+                </ul>
+              </li>
+              <a class="nav-link" href="contact.html" id="active">Contact</a>
+              <a class="btn btn-outline-light" href="login.html">Login</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Hero Start -->
+
+    <section
+      id="hero"
+      class="hero d-flex justify-content-center align-items-center text-center text-white flex-column"
+    >
+      <h1>Contact Us</h1>
+      <h4>Ayo Hubungi Kami</h4>
+    </section>
+
+    <!-- Hero End -->
+
+    <section id="contact">
+      <div class="container">
+        <div class="row mx-1">
+          <div class="col-6">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31729.271943561773!2d106.77139331083984!3d-6.242766799999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f16672fb86b1%3A0xb24320e63e93e038!2sSMK%20Negeri%206%20Jakarta!5e0!3m2!1sid!2sid!4v1717003707372!5m2!1sid!2sid"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              class="maps"
+            ></iframe>
+          </div>
+          <div class="col-6 form">
+            <form action="">
+              <h2 class="text-center">Kirim Pesan Ke kami❤️</h2>
+              <div class="row">
+                <div class="col">
+                  <label for="username">Nama</label>
+                  <input type="text" name="username" id="username" />
+                </div>
+                <div class="col">
+                  <label for="email">Email</label><br />
+                  <input type="email" name="email" id="email" />
+                </div>
+              </div>
+
+              <label for="exampleFormControlTextarea1" class="form-label"
+                >Pesan</label
+              >
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="4"
+              ></textarea>
+
+              <button type="submit" class="btn btn-primary mt-3">
+                Kirim❤️
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Start -->
+
+    <footer class="footer text-white" id="footer">
+      <div class="container pt-5">
+        <div class="row">
+          <h2 class="text-center">Anda Dapat Menghubungi kami</h2>
+          <div class="col text-center">
+            <a href="#profile" class="btn btn-outline-light mt-4 px-4"
+              >Learn More <i class="bi bi-arrow-right-circle"></i>
+            </a>
+          </div>
+          <div class="row my-5">
+            <div class="col">
+              <h2>JakFest</h2>
+              <p>Celebrate Every Moment with JakFest</p>
+              <p class="d-flex align-items-center">
+                <i class="bi bi-envelope" style="font-size: 2rem"></i>
+                @JakFest.gmail.com
+              </p>
+              <p class="d-flex align-items-center">
+                <i class="bi bi-telephone-fill" style="font-size: 2rem"></i
+                >081234567
+              </p>
+              <div class="col icon">
+                <a href=""><i class="bi bi-github"></i></a>
+                <a href=""><i class="bi bi-instagram px-2"></i></a>
+                <a href=""><i class="bi bi-tiktok"></i></a>
+              </div>
+            </div>
+            <div class="col text-end">
+              <h2>Alamat</h2>
+              <p>
+                Jl. Prof. Joko Sutono SH No.1 2A, RT.1/RW.2, Melawai, Kebayoran
+                Baru, South Jakarta City, Jakarta 12160
+              </p>
+            </div>
+          </div>
+
+          <p class="text-center">
+            Copyright ©Naxsyl 2024, All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Footer End -->
+
+    <!-- Js Boostrap -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JakFest</title>
+    <!-- My Bootstrap -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <!-- icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- My style -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="music-page">
+    <!-- Navbar Start -->
+    <nav
+      class="navbar navbar-dark bg-transparent navbar-expand-md sticky-top mynavbar"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">JakFest</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end text-bg-dark"
+          tabindex="-1"
+          id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+              JakFest
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body text-center">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link" href="about.html">About</a>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  id="active"
+                >
+                  Event
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Music</a></li>
+                  <li><a class="dropdown-item" href="#">Food</a></li>
+                  <li><a class="dropdown-item" href="#">Cosplay</a></li>
+                </ul>
+              </li>
+              <a class="nav-link" href="contact.html">Contact</a>
+              <a class="btn btn-outline-light" href="login.html">Login</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Hero Start -->
+
+    <section
+      id="hero"
+      class="hero d-flex justify-content-center align-items-center text-center text-white flex-column"
+    >
+      <h1>Food</h1>
+      <h4>Dari Dapur ke perut: Eksplorasi Food Jakarta</h4>
+    </section>
+
+    <!-- Hero End -->
+
+    <!-- Event Start -->
+    <section id="event" class="event">
+      <div class="container">
+        <h2 class="text-center">Event</h2>
+
+        <!-- Music Start -->
+        <h3 class="music-head">Music</h3>
+        <div class="row row-cols-lg-4 gy-3">
+          <!-- Card Start -->
+          <div class="col">
+            <div class="card music-card" style="width: 15rem">
+              <img src="img/poster_food_1.jpg" class="card-img-top" alt="..." />
+              <div class="card-body text-white">
+                <h5 class="card-title fw-bold">Event JKT 48</h5>
+                <p class="card-text fw-normal fs-6">Konser JKT 48</p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal1"
+                >
+                  View More <i class="bi bi-arrow-right-circle"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Card End -->
+
+          <!-- Card Start -->
+          <div class="col">
+            <div class="card music-card" style="width: 15rem">
+              <img src="img/poster_food_2.jpg" class="card-img-top" alt="..." />
+              <div class="card-body text-white">
+                <h5 class="card-title fw-bold">R-I FEST</h5>
+                <p class="card-text fw-normal fs-6">Konser</p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal2"
+                >
+                  View More <i class="bi bi-arrow-right-circle"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Card End -->
+
+          <!-- Card Start -->
+          <div class="col">
+            <div class="card music-card" style="width: 15rem">
+              <img src="img/poster_food_3.jpg" class="card-img-top" alt="..." />
+              <div class="card-body text-white">
+                <h5 class="card-title fw-bold">XPERIENCE</h5>
+                <p class="card-text fw-normal fs-6">Konser</p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal3"
+                >
+                  View More <i class="bi bi-arrow-right-circle"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Card End -->
+
+          <!-- Card Start -->
+          <div class="col">
+            <div class="card music-card" style="width: 15rem">
+              <img src="img/poster_food_4.jpg" class="card-img-top" alt="..." />
+              <div class="card-body text-white">
+                <h5 class="card-title fw-bold">ALOBANK FEST</h5>
+                <p class="card-text fw-normal fs-6">Konser</p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal4"
+                >
+                  View More <i class="bi bi-arrow-right-circle"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Card End -->
+
+          <!-- Card Start -->
+          <div class="col">
+            <div class="card music-card" style="width: 15rem">
+              <img
+                src="img/poster_music_5.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-white">
+                <h5 class="card-title fw-bold">SOSIAL CHIC</h5>
+                <p class="card-text fw-normal fs-6">Konser</p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal4"
+                >
+                  View More <i class="bi bi-arrow-right-circle"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Card End -->
+
+          <!-- Card Start -->
+          <div class="col">
+            <div class="card music-card" style="width: 15rem">
+              <img
+                src="img/poster_music_5.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-white">
+                <h5 class="card-title fw-bold">SOSIAL CHIC</h5>
+                <p class="card-text fw-normal fs-6">Konser</p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal4"
+                >
+                  View More <i class="bi bi-arrow-right-circle"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Card End -->
+        </div>
+        <!-- Music End -->
+      </div>
+    </section>
+
+    <!-- Awal Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal1"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button
+            type="button"
+            class="btn-close myclose"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+          <div class="row">
+            <div class="col">
+              <img
+                src="img/poster_music_1.jpg"
+                width="100%"
+                class="rounded-3"
+              />
+            </div>
+            <div class="col py-3 modal-text-music">
+              <h3>Semesta Bergoyang Jilid 2</h3>
+              <p>
+                Ini dia 5 Member jkt48 yang bakal kolaborasi sama kingnassar88
+                di semesta bergoyang Jilid2!🤩
+              </p>
+              <p>
+                Udah siap seru-seruan bareng Oniel, Flora, Ella, Eli dan Lulu
+                disinii?!! Lesgoo beli tiketnya, klik link di bio
+                @semestabergoyang yaa!❤️
+              </p>
+              <p>
+                Semesta Bergoyang Jilid 2 <br />
+                🗓️ 25 Mei 2024 <br />
+                📍 Gambir Expo, Kemayoran, Jakarta
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Akhir Modal -->
+
+    <!-- Awal Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal2"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button
+            type="button"
+            class="btn-close myclose"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+          <div class="row">
+            <div class="col">
+              <img
+                src="img/poster_music_2.jpg"
+                width="100%"
+                class="rounded-3"
+              />
+            </div>
+            <div class="col py-3 modal-text-music">
+              <h3>R-I FEST</h3>
+              <p>
+                "Min, bedanya OTW sama R-I Fest apa??" Nah, buat yang belum tau.
+                R-I Fest akan diadakan selama 3 hari dari tanggal 16-18 Agustus
+                2024 di Gambir Expo, JIExpo Kemayoran 🔥🔥
+              </p>
+              <p>
+                Tiketnya tersedia daily dan juga 3 day pass. Beli presale 3 day
+                pass, kamu cukup bayar Rp 150.000 udah bisa nonton selama 3 hari
+                tersebut.
+              </p>
+              <p>
+                R-I Fest <br />
+                🗓️ 16,17,18 Agustus 2024 <br />
+                📍 Gambir Expo, Kemayoran, Jakarta
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Akhir Modal -->
+
+    <!-- Awal Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal3"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button
+            type="button"
+            class="btn-close myclose"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+          <div class="row">
+            <div class="col">
+              <img
+                src="img/poster_music_3.jpg"
+                width="100%"
+                class="rounded-3"
+              />
+            </div>
+            <div class="col py-3 modal-text-music">
+              <h3>Experience</h3>
+              <p>
+                1-Day to remember✨ Jakarta let's make a memories, an experience
+                we will remember forever. Bring your friends, lovers, fams or
+                anyone to spend the night at Soundsfest Experience🚀
+              </p>
+              <p>
+                Experience <br />
+                🗓️ 22 June 2024 <br />
+                📍 Kuningan City, P6-P7
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Akhir Modal -->
+
+    <!-- Awal Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal4"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button
+            type="button"
+            class="btn-close myclose"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+          <div class="row">
+            <div class="col">
+              <img
+                src="img/poster_music_4.jpg"
+                width="100%"
+                class="rounded-3"
+              />
+            </div>
+            <div class="col py-3 modal-text-music">
+              <h3>ALOBANK</h3>
+              <p>
+                🎶 ALLO BANK FESTIVAL 2024: DAY 1 LINE UP 🎶 <br />
+                Ini dia yang kamu tunggu-tunggu! ✨ <br />
+                Udah siap nyanyi bareng artis-artis favorit kamu di Allo Bank
+                Festival 2024 DAY 1?! 🤩 <br />
+
+                Siap-siap buat nonton Intimate Concert Experience featuring
+                MALIQ & D’Essentials, Tiara Andini, Kahitna, Vierratale, Juicy
+                Luicy ft. Adrian Khalif, Tulus, dan masih banyak lagi! <br />
+
+                Follow dan nyalain notifikasi Allo Bank di seluruh media sosial
+                biar kamu gak ketinggalan update selanjutnya! 🔔
+              </p>
+              <p>
+                ALOBANK <br />
+                🗓️ 22 June 2024 <br />
+                📍 Kuningan City, P6-P7
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Akhir Modal -->
+
+    <!-- Awal Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal3"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button
+            type="button"
+            class="btn-close myclose"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+          <div class="row">
+            <div class="col">
+              <img
+                src="img/poster_music_3.jpg"
+                width="100%"
+                class="rounded-3"
+              />
+            </div>
+            <div class="col py-3 modal-text-music">
+              <h3>Experience</h3>
+              <p>
+                1-Day to remember✨ Jakarta let's make a memories, an experience
+                we will remember forever. Bring your friends, lovers, fams or
+                anyone to spend the night at Soundsfest Experience🚀
+              </p>
+              <p>
+                Experience <br />
+                🗓️ 22 June 2024 <br />
+                📍 Kuningan City, P6-P7
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Akhir Modal -->
+
+    <!-- Event End -->
+
+    <!-- Footer Start -->
+
+    <footer class="footer text-white" id="footer">
+      <div class="container pt-5">
+        <div class="row">
+          <h2 class="text-center">Anda Dapat Menghubungi kami</h2>
+          <div class="col text-center">
+            <a href="#profile" class="btn btn-outline-light mt-4 px-4"
+              >Learn More <i class="bi bi-arrow-right-circle"></i>
+            </a>
+          </div>
+          <div class="row my-5">
+            <div class="col">
+              <h2>JakFest</h2>
+              <p>Celebrate Every Moment with JakFest</p>
+              <p class="d-flex align-items-center">
+                <i class="bi bi-envelope" style="font-size: 2rem"></i>
+                @JakFest.gmail.com
+              </p>
+              <p class="d-flex align-items-center">
+                <i class="bi bi-telephone-fill" style="font-size: 2rem"></i
+                >081234567
+              </p>
+              <div class="col icon">
+                <a href=""><i class="bi bi-github"></i></a>
+                <a href=""><i class="bi bi-instagram px-2"></i></a>
+                <a href=""><i class="bi bi-tiktok"></i></a>
+              </div>
+            </div>
+            <div class="col text-end">
+              <h2>Alamat</h2>
+              <p>
+                Jl. Prof. Joko Sutono SH No.1 2A, RT.1/RW.2, Melawai, Kebayoran
+                Baru, South Jakarta City, Jakarta 12160
+              </p>
+            </div>
+          </div>
+
+          <p class="text-center">
+            Copyright ©Naxsyl 2024, All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Footer End -->
+
+    <!-- Js Boostrap -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>

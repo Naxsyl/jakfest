@@ -1,0 +1,325 @@
+/* Setting */
+:root {
+  --color-white: #fcfcfc;
+  --color-pink: #e33267;
+  --color-purple: #882c89;
+  --color-orange: #f65224;
+  --color-yellow: #f9a528;
+  --color-tosca: #1bada0;
+  --color-hitam: #111111;
+  --color-biru: #2658bd;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 2000px;
+  overflow-x: hidden !important;
+}
+
+/* Setting */
+
+/* Navbar Start */
+
+.index .navbar {
+  background-color: var(--color-yellow) !important;
+}
+
+.about .navbar {
+  background-color: var(--color-biru) !important;
+}
+
+.contact .navbar {
+  background-color: var(--color-orange) !important;
+}
+
+.music-page .navbar {
+  background-color: var(--color-pink) !important;
+}
+
+.mynavbar.scroll {
+  background-color: rgba(33, 33, 33, 0.3) !important;
+  backdrop-filter: blur(4px);
+}
+
+.navbar-nav #active {
+  transform: scale(1.1);
+  font-weight: 600;
+}
+
+.navbar-nav a {
+  color: var(--color-white);
+  transition: 0.3s;
+}
+
+body.index .navbar-nav a:hover {
+  color: var(--color-orange);
+  transform: scale(1.2);
+}
+
+.about .navbar-nav a:hover {
+  color: skyblue;
+  transform: scale(1.2);
+}
+.contact .navbar-nav a:hover {
+  color: var(--color-hitam);
+  transform: scale(1.2);
+}
+
+.navbar-nav .dropdown-menu {
+  --bs-dropdown-min-width: 0rem;
+  --bs-dropdown-padding-x: null;
+  --bs-dropdown-link-hover-bg: var(--color-yellow);
+}
+
+.navbar-nav .dropdown-menu a {
+  color: var(--color-hitam);
+}
+
+.navbar-nav .dropdown-menu a:hover {
+  transform: scale(1) !important;
+}
+
+/* Navbar End */
+
+/* Hero Start */
+.hero {
+  position: relative;
+  top: -55px;
+  height: 100vh !important;
+  background-color: var(--color-yellow);
+}
+
+.about .hero {
+  background-color: var(--color-biru);
+}
+.contact .hero {
+  background-color: var(--color-orange);
+}
+
+.music-page .hero {
+  background-color: var(--color-pink);
+}
+
+.hero h1 {
+  font-size: 8rem;
+  font-weight: bold;
+}
+
+.hero h4 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.hero a {
+  font-size: 1.4rem;
+  border-radius: 25px;
+}
+.hero a:hover {
+  color: var(--color-yellow);
+}
+/* Hero end */
+
+/* Profile Start */
+
+.profile,
+.event,
+.footer,
+.vms {
+  margin-top: 30px;
+}
+
+.profile {
+  color: var(--color-purple);
+}
+
+body.about .profile .container {
+  color: var(--color-biru);
+  border-radius: 12px;
+}
+
+body.about .profile .container {
+  background-color: var(--color-white);
+}
+
+body.about {
+  background-color: var(--color-biru);
+}
+
+.profile p {
+  font-size: 1.3rem;
+}
+
+.profile h2 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.profile a {
+  --bs-btn-border-color: #882c89;
+  color: var(--color-purple);
+}
+.profile a:hover {
+  background-color: var(--color-purple);
+  color: var(--color-white);
+}
+
+/* Profile End */
+
+/* Vms Start */
+.about .vms {
+  background-color: var(--color-white);
+  color: var(--color-biru);
+}
+
+.about .vms .container p {
+  font-size: 1.3rem;
+}
+
+/* Vms End */
+
+/* Contact Start */
+.contact .form {
+  background-color: var(--color-orange);
+  padding: 10px 15px;
+  color: var(--color-white);
+}
+
+.contact .maps {
+  width: 100%;
+  height: 100%;
+}
+/* Contact End */
+
+/* Event Start */
+
+.event h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--color-yellow);
+}
+
+.index .event .row {
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+}
+
+.index .event .row::-webkit-scrollbar {
+  display: none;
+}
+
+.event .music-head {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--color-pink);
+}
+
+.event .music-card {
+  background-color: var(--color-pink);
+}
+
+.event .food-card {
+  background-color: var(--color-tosca);
+}
+.event .cosplay-card {
+  background-color: var(--color-orange);
+}
+
+.event .food-head {
+  margin-top: 20px;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--color-tosca);
+}
+
+.event .cosplay-head {
+  margin-top: 20px;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--color-tosca);
+}
+
+/* Event End */
+
+/* Modal Start */
+.modal {
+  --bs-modal-width: 900px;
+}
+
+.modal-content .myclose {
+  position: absolute;
+}
+
+/* Modal End */
+
+/* Footer Start */
+footer {
+  background-color: var(--color-biru);
+}
+
+footer .icon a i::before {
+  font-size: 2rem;
+  color: var(--color-white);
+}
+
+footer .icon a:hover i::before {
+  color: #c0d5ff; /* Ganti dengan warna yang Anda inginkan */
+}
+
+/* Footer End */
+
+/* Media Query */
+/* laptop */
+@media (max-width: 992px) {
+  html {
+    font-size: 75% !important;
+  }
+}
+
+/* tablet */
+
+@media (max-width: 768px) {
+  html {
+    font-size: 65% !important;
+  }
+  /* .hero h1 {
+    font-size: 7rem;
+  }
+  .hero h4 {
+    font-size: 1.7rem;
+  } */
+}
+
+/* mobile phone */
+
+@media (max-width: 576px) {
+  html {
+    font-size: 60% !important;
+  }
+
+  .about .profile {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  body.about .profile .container {
+    padding: 10px 15px !important;
+  }
+
+  .about .vms .container .row {
+    padding: 20px 20px;
+  }
+
+  /* .hero h1 {
+    font-size: 6rem;
+  }
+ 
+
+  .hero h4 {
+    font-size: 1.5rem;
+  } */
+}
